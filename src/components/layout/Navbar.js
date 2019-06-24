@@ -1,13 +1,18 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
+import SignedInLinks from './SignedInLinks';
+import SignedOutLinks from './SignedOutLinks';
 
 class Navbar extends Component {
   render() {
     return (
-      <nav className="nav-wrapper">
+      <nav className="nav-wrapper grey darken-3">
         <div className="container">
-          <a href="!#" className="brand-logo">
+          <Link to="/" className="brand-logo">
             MarioPlan
-          </a>
+          </Link>
+          <SignedInLinks />
+          <SignedOutLinks />
         </div>
       </nav>
     );
