@@ -6,7 +6,7 @@ class SignedInLinks extends Component {
     return (
       <ul className="right">
         <li>
-          <NavLink to="/">New Project</NavLink>
+          <NavLink to="/create">New Project</NavLink>
         </li>
         <li>
           <NavLink to="/logout">Log out</NavLink>
