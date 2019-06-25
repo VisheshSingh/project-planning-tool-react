@@ -2,10 +2,11 @@ import React, { Component } from 'react';
 
 class ProjectSummary extends Component {
   render() {
+    const { project } = this.props;
     return (
       <div className="card z-depth-0 project-summary">
         <div className="card-content grey-text text-darken-3">
-          <span className="card-title">Project Title</span>
+          <span className="card-title">{project.title}</span>
           <p className="postedBy">Posted by Net Ninja</p>
           <p className="grey-text">3rd September, 2am</p>
         </div>

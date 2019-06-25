@@ -4,9 +4,11 @@ class ProjectList extends Component {
   render() {
     return (
       <div className="project-list section">
-        <ProjectSummary />
-        <ProjectSummary />
-        <ProjectSummary />
+        {' '}
+        {this.props &&
+          this.props.projects.map(project => {
+            return <ProjectSummary project={project} key={project.id} />;
+          })}
       </div>
     );
   }
