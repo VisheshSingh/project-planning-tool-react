@@ -7,10 +7,16 @@ const initState = {
 };
 
 const projectReducer = (state = initState, action) => {
-  if (action.type === 'CREATE') {
-    console.log('created project: ', action.payload);
+  switch (action.type) {
+    case 'CREATE':
+      console.log('created project: ', action.payload);
+      return state;
+    case 'CREATE PROJECT ERR':
+      console.log('project err: ', action.payload);
+      return state;
+    default:
+      return state;
   }
-  return state;
 };
 
 export default projectReducer;
