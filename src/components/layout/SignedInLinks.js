@@ -5,7 +5,7 @@ import { signOut } from '../../actions/authActions';
 
 class SignedInLinks extends Component {
   render() {
-    const { signOut } = this.props;
+    const { signOut, profile } = this.props;
     return (
       <ul className="right">
         <li>
@@ -18,7 +18,7 @@ class SignedInLinks extends Component {
         </li>
         <li>
           <NavLink to="/" className="btn btn-floating pink darken-2">
-            NN
+            {profile.initials}
           </NavLink>
         </li>
       </ul>
