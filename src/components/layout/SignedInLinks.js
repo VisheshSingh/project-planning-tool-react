@@ -12,9 +12,9 @@ class SignedInLinks extends Component {
           <NavLink to="/create">New Project</NavLink>
         </li>
         <li>
-          <a href="!#" onClick={signOut}>
+          <NavLink to="/login" onClick={signOut}>
             Log out
-          </a>
+          </NavLink>
         </li>
         <li>
           <NavLink to="/" className="btn btn-floating pink darken-2">
