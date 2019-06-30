@@ -20,7 +20,11 @@ class ProjectDetails extends Component {
               <div>
                 Posted By {project.firstname} {project.lastname}
               </div>
-              <p>3rd October, 1pm</p>
+              <p>
+                {project.createdAt
+                  ? project.createdAt.toDate().toDateString()
+                  : ''}
+              </p>
             </div>
           </div>
         </div>
